@@ -22,7 +22,7 @@
 # Commands
 
 | Command | Syntax | Description | Required Level |  
-|---|---|---|---|---|
+|---:|---|---|---|---|
 | help | /help  | This command show all SXAdmin Comands | User |   
 | spawn |  /Spawn | This command teleport user to frist spawn area | User |   
 | admins | /admins  | This commands is to see if there moderators online | User |  
