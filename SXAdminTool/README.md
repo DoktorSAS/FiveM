@@ -1,4 +1,3 @@
-s
 # SXAdminTool Version General
     Code Developed by DoktorSAS - Join in Sorex Discord To Report Any BUGS
     Version 1.2
