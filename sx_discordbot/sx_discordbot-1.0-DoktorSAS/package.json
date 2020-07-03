@@ -1,0 +1,15 @@
+{
+  "name": "sx_discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"[Error]: no test specified\" && exit 1"
+  },
+  "author": "DoktorSAS",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "github:vecchiotom/discord.js",
+    "mysql": "^2.18.1"
+  }
+}
