@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Side Bar Navigation</title>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div class="container" id="container"> 
+      <div class="phone">
+        <div class="content">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li><button class="buttonbg" id="home_hide"><a>Home</a></button></li>
+              <li><button class="buttonbg" id="owner_hide"><a>Owner Menu</a></button></li>
+              <li><button class="buttonbg" id="player_hide"><a>Players Menu</a></button></li> 
+              <li><button class="buttonbg" id="tempban_hide"><a>Ban Menu</a></button></li>
+            </ul>
+           </div>
+          </nav>
+          <div id="home_menu">
+            <h1 >SXAdmin Menu v1.0</h1>
+            <h2>Developed by DoktorSAS - Credits go to DoktorSAS</h2>
+            <p>For any problems with the SX Resource report it to the Developer</p>
+            <h4><a>Join in Sorex Discord</a></h4>
+            <h3><a>Link #1: https://discord.com/invite/nCP2y4J</a></h3>
+            <h3><a>Link #2: https://discord.io/Sorex</a></h3>
+          </div>
+
+          <div id="player_menu">
+            <h1>Players Menu</h1>
+            <h3>Using this menu you can Kick, Warn and Teleport Players</h3>
+            <div class="topnav">
+              <input type="text" id="player" name="player" placeholder="Insert ID or Name">
+              <input type="text" id="reason" name="reason" placeholder="Reason of the Kick">
+              <button class="buttonbg" id="KICK"><a>KICK</a></button>
+              <button class="buttonbg" id="WARN"><a>WARN</a></button>
+            </div>
+            <div class="topnav">
+              <input type="text" id="player_name" name="player_name" placeholder="Insert ID or Name">
+              <button class="buttonbg" id="TPME"><a>TP TO ME</a></button>
+              <button class="buttonbg" id="TPTO"><a>TP TO HIM</a></button>
+            </div>
+            <div class="seachbar">
+               <input type="text" placeholder="Search.." id="player_to_search"><div class="topnav"><button type="button" class="buttonbg" id="search_player"><a>SEARCH</a></button></div>
+            </div>
+            <div id="player_warp" class="scroll"><table></table></div>
+          </div>
+
+          <div id="owner_menu">
+            <h1 >Owner Menu</h1>
+            <h3>Something</h3>
+            <div class="topnav">
+              <input type="text" id="player_db_id" name="player_db_id" placeholder="Insert ID" size="18" class="spaceright">
+              <input type="text" id="player_level" name="player_level" placeholder="Insert Rank Level" size="18" class="spaceright">
+              <button class="buttonbg" id="SETRANK"><a>SET RANK</a></button>
+            </div>       
+            <div class="topnav">
+              <input type="text" id="player_db_id_end" name="player_db_id_end" placeholder="Insert ID" size="18" class="spaceright">
+              <button class="buttonbg" id="UNBAN"><a>UNBAN</a></button>
+              <button class="buttonbg" id="BAN"><a>PERMANENT BAN</a></button>
+            </div>       
+            <div class="seachbar">
+              <input type="text" placeholder="Search.." id="player_to_search_tbo"><div class="topnav"><button type="button" class="buttonbg" id="search_player_permban"><a>SEARCH</a></button></div>
+            </div>
+            <div id="owner_warp" class="scroll"><table></table></div>
+          </div>
+
+          <div id="tempban_menu">
+            <h1 >Ban Menu</h1>
+            <h3>This area is dedicated to the management of players if the rules are not respected</h3>
+            <div class="topnav">
+              <input type="text" id="player_name_tb" name="player_name_tb" placeholder="Insert ID or Name" size="18" class="spaceright">
+              <input type="text" id="time" name="time" placeholder="Insert number" size="18">
+              <input type="text" id="type" name="type" placeholder="Insert type" size="18">
+              <input type="text" id="reason_tb" name="reason_tb" placeholder="Reason" size="19">
+            </div>
+            <div class="topnav">
+              <button class="buttonbg" id="TEMPBANNAME"><a>TEMPBAN with NAME</a></button>
+              <button class="buttonbg" id="TEMPBANID"><a>TEMPBAN with DB ID</a></button>
+            </div>
+            
+            <div class="seachbar">
+              <input type="text" placeholder="Search.." id="player_to_search_tb"><div class="topnav"><button type="button" class="buttonbg" id="search_player_ban"><a>SEARCH</a></button></div>
+            </div>
+            <div id="tempban_warp" class="scroll"><table></table></div>
+          </div>
+
+       </div>
+    </div>
+  </body>
+</html>
